@@ -1,0 +1,166 @@
+﻿@{
+    ViewData["Title"] = "Register Page";
+}
+
+<br />
+<div class="card" style="width: 40rem;">
+  <img class="card-img-top" src="/images/RegisterBanner.png" alt="Register Banner">
+  <div class="card-body">
+    <h3 class="card-title text-center"><b>Register</b></h3>
+        <form>
+            <div class="form-row">
+                <div class="d-flex col-xs-3">
+                    <input type="text" class="form-control" placeholder="First name">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <br />
+            <div class="form-row">
+                <div class="d-flex col-xs-3">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="email" class="form-control" id="confirmEmail" placeholder="Confirm Email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="d-flex col-xs-3">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputAddress" placeholder="Address: Example: 1234 Main St">
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="text" class="form-control" id="inputAddressApartment" placeholder="Apartment, studio, or floor">
+            </div>
+            <br />
+            <div class="form-row">
+                <div class="d-flex col-xs-3">
+                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="d-flex col-6">
+                    <select id="inputState" class="form-control">
+                        <option selected>State...</option>
+                        <option>AL</option>
+                        <option>AK</option>
+                        <option>AZ</option>
+                        <option>AR</option>
+                        <option>AS</option>
+                        <option>CA</option>
+                        <option>CO</option>
+                        <option>CT</option>
+                        <option>DE</option>
+                        <option>DC</option>
+                        <option>FL</option>
+                        <option>GA</option>
+                        <option>GU</option>
+                        <option>HI</option>
+                        <option>ID</option>
+                        <option>IL</option>
+                        <option>IN</option>
+                        <option>IA</option>
+                        <option>KS</option>
+                        <option>KY</option>
+                        <option>LA</option>
+                        <option>MA</option>
+                        <option>MD</option>
+                        <option>ME</option>
+                        <option>MI</option>
+                        <option>MN</option>
+                        <option>MO</option>
+                        <option>MP</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>NC</option>
+                        <option>ND</option>
+                        <option>NE</option>
+                        <option>NH</option>
+                        <option>NJ</option>
+                        <option>NM</option>
+                        <option>NV</option>
+                        <option>NY</option>
+                        <option>OH</option>
+                        <option>OK</option>
+                        <option>OR</option>
+                        <option>PA</option>
+                        <option>PR</option>
+                        <option>RI</option>
+                        <option>SC</option>
+                        <option>SD</option>
+                        <option>TN</option>
+                        <option>TX</option>
+                        <option>TT</option>
+                        <option>UT</option>
+                        <option>VT</option>
+                        <option>VA</option>
+                        <option>VI</option>
+                        <option>WA</option>
+                        <option>WV</option>
+                        <option>WI</option>
+                        <option>WY</option>
+                    </select>
+                    <div class="d-flex col-xs-3">
+                        <input type="text" class="form-control" id="inputZip" placeholder=" Zip Code">
+                    </div>
+                </div>
+                <br />
+            </div>
+            <br />
+            <h3 class="card-title text-center"><b>Payment</b></h3>
+            <br />
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Debit
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Credit
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    PayPal
+                </label>
+            </div>
+            <br />
+            <div class="form-row">
+                <div class="d-flex col-xs-3">
+                    <input type="text" class="form-control" placeholder="Name On Card">
+                    <input type="text" class="form-control" placeholder="Card Number">
+                </div>
+            </div>
+            <div class="form-group d-flex col-md-5">
+                <input type="text" class="form-control" id="inputZip" placeholder=" Expiration Date">
+                <input type="text" class="form-control" id="inputZip" placeholder=" CVV">
+            </div>
+            <br />
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Yes, I'd like to recieve special offers from Revival Pizza!
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    No thank you.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    I Agree to the Terms and Conditions.
+                </label>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-dark">Register</button>
+        </form>
+  </div>
+</div>

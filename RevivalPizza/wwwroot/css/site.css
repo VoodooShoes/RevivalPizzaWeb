@@ -1,0 +1,114 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 40px;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgb(40, 40, 43);
+    right: 0;
+    bottom: 0;
+}
+/*Video background*/
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*Center cards*/
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .5);
+}
+
+.navbar {
+    width: 130px;
+    background: rgba(0,0,0,0);
+}
+
+.nav-link {
+    width: 130px;
+    font-size: 17px;
+}
+/*Navbar logo*/
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.form-control {
+    margin: 10px;
+}
+/*.socialMedia {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}*/
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    float: left;
+}
+
+
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
